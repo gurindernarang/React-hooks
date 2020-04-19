@@ -1,10 +1,11 @@
-import React, { Component } from "react";
+import React from "react";
+import { NavLink } from "react-router-dom";
 
 function Header() {
   return (
     <nav>
-      <a href="/">Home</a> | <a href="/about">About</a> |{" "}
-      <a href="/courses">Courses</a>
+      <NavLink to="/">Home</NavLink> | <NavLink to="/about">About</NavLink> |{" "}
+      <NavLink to="/courses">Courses</NavLink>
     </nav>
   );
 }
